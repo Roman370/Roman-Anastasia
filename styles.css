@@ -409,7 +409,7 @@
 
 @media (max-width: 768px) {
   .Invitation {
-    background-attachment: unset;
+    /*  background-attachment: unset; */
     padding-bottom: 60px;
   }
 }
