@@ -352,7 +352,7 @@ $fontStyleTitle: "EseninOne";
     justify-content: flex-end;
     padding: 30px 5px;
     align-items: center;
-    height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
     min-height: 100vh;
     background-image: url(img/Invitation_img.jpg);
     background-position-x: center;
