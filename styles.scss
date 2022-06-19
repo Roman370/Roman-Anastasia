@@ -67,8 +67,8 @@ $fontStyleTitle: "EseninOne";
     background-image: url(img/fon_new.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
-   /*  background-position: center; */
+
+    /*  background-position: center; */
     background-attachment: fixed;
 }
 
@@ -84,14 +84,12 @@ $fontStyleTitle: "EseninOne";
 
 //====глобальные стили===========================
 
-
 .separation_block {
     @include adaptive-value("width", 500, 200, 0);
     transition: all 0.7s ease;
     transform: scale(0);
     opacity: 0;
     padding: 40px 0;
-
 
     &._active {
         transform: scale(1);
@@ -353,7 +351,6 @@ $fontStyleTitle: "EseninOne";
     padding: 30px 5px;
     align-items: center;
     height: calc(var(--vh, 1vh) * 100);
-    min-height: 100vh;
     background-image: url(img/Invitation_img.jpg);
     background-position-x: center;
     background-size: cover;
@@ -363,7 +360,7 @@ $fontStyleTitle: "EseninOne";
     z-index: 0;
 
     @media (max-width: 768px) {
-       /*  background-attachment: unset; */
+        background-attachment: local;
         padding-bottom: 60px;
     }
 
@@ -623,7 +620,6 @@ $fontStyleTitle: "EseninOne";
         @media (max-width: 768px) {
             font-size: 12px;
         }
-        
     }
 
     &_circle {
@@ -733,13 +729,10 @@ $fontStyleTitle: "EseninOne";
         height: 190px;
     }
 
-    @media (max-width: 400px ) {
+    @media (max-width: 400px) {
         max-width: 300px;
         height: 190px;
     }
-
-
-
 }
 
 [class*="copyrights-pane"] {
@@ -999,7 +992,6 @@ $fontStyleTitle: "EseninOne";
     }
 
     &__text {
-        
         transition: all 0.7s ease;
         transform: translate(0, 120%);
         opacity: 0;

@@ -397,7 +397,6 @@
       -ms-flex-align: center;
           align-items: center;
   height: calc(var(--vh, 1vh) * 100);
-  min-height: 100vh;
   background-image: url(img/Invitation_img.jpg);
   background-position-x: center;
   background-size: cover;
@@ -409,7 +408,7 @@
 
 @media (max-width: 768px) {
   .Invitation {
-    /*  background-attachment: unset; */
+    background-attachment: local;
     padding-bottom: 60px;
   }
 }
