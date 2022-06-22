@@ -31,12 +31,22 @@
   scroll-behavior: smooth;
 }
 
-.body {
+.bgc_fixed {
+  position: fixed;
+  z-index: -4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
   background-image: url(img/fon_new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /*  background-position: center; */
-  background-attachment: fixed;
+}
+
+.body {
+  /*     background-position: center;
+    background-attachment: fixed; */
 }
 
 .body._active {
@@ -1265,6 +1275,7 @@
   height: 30px;
   padding: 10px 10px;
   background: transparent;
+  color: #ffffff;
 }
 
 .textarea {
