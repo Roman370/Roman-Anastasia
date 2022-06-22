@@ -360,9 +360,10 @@ $fontStyleTitle: "EseninOne";
     padding: 30px 5px;
     align-items: center;
     height: calc(var(--vh, 1vh) * 100);
-    background-image: url(img/Invitation_img.jpg);
-    background-position-x: center;
+    background-image: url(img/me/bgiGlav.jpg);
     background-size: cover;
+     background-position-x: 52%; 
+    background-position-y: 10%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
@@ -756,14 +757,21 @@ $fontStyleTitle: "EseninOne";
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    background: url(img/fon_time.jpg), no-repeat, center;
+    
+    height: 80vh;
+    background-image: url(img/me/timephoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 50%;
+    
     background-attachment: fixed;
     position: relative;
     z-index: 1;
 
     @media (max-width: 768px) {
         background-attachment: unset;
+        padding-top: 220px;
     }
 
     &__text {
@@ -807,6 +815,7 @@ $fontStyleTitle: "EseninOne";
 .time_count {
     display: flex;
     justify-content: center;
+ 
 
     transition: all 0.9s ease;
     transform: scale(0);
@@ -1151,9 +1160,12 @@ $fontStyleTitle: "EseninOne";
     align-items: flex-end;
     justify-content: center;
     position: relative;
-    height: 80vh;
+    height: 90vh;
     z-index: 1;
-    background: url(img/Footer_fon.jpg), no-repeat, center;
+    background-image: url(img/me/bgiFooter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     &__title {
         font-family: $fontStyleTitle, sans-serif;
