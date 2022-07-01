@@ -138,6 +138,7 @@
     -webkit-box-pack: none;
         -ms-flex-pack: none;
             justify-content: none;
+    background-color: #cfcbcba6;
   }
 }
 
@@ -926,12 +927,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  height: 100vh;
   background-image: url(img/me/timephoto.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position-x: center;
-  background-position-y: 50%;
+  background-position-y: center;
   background-attachment: fixed;
   position: relative;
   z-index: 1;
@@ -941,6 +941,9 @@
   .Time {
     background-attachment: unset;
     padding-top: 220px;
+    height: 80vh;
+    background-size: cover;
+    background-position-y: 50%;
   }
 }
 
@@ -1432,7 +1435,7 @@
   position: relative;
   height: 90vh;
   z-index: 1;
-  background-image: url(img/me/bgiFooter.jpg);
+  background-image: url(img/me/bgi-footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
