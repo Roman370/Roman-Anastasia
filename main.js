@@ -1,11 +1,11 @@
 // We listen to the resize event
- window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     // We execute the same script as before
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }); 
- 
-  //====================================
+});
+
+//====================================
 function clickAdaptive() {
     const button = document.querySelector('.header_nav_button')
     const menu = document.querySelectorAll('.nav_list')
@@ -95,7 +95,7 @@ if (animItems.length > 0) {
 
 //============Карта===============
 let center = [52.26533828843425, 49.0994052711639];
-let cafe = [52.274800071882325,49.11259449999999];
+let cafe = [52.274800071882325, 49.11259449999999];
 
 function init() {
 
@@ -137,7 +137,8 @@ ymaps.ready(init);
 //=====Таймер обратного отсчета=======
 
 document.addEventListener('DOMContentLoaded', () => {
-    const newYear = new Date('September 9 2022 00:00:00');
+    const newYear = new Date('September 9 2022 00:00:00'); 
+ 
 
     const daysVal = document.querySelector('.time-count__days .time-count__val');
     const hoursVal = document.querySelector('.time-count__hours .time-count__val');
@@ -157,6 +158,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const timeCount = () => {
         let now = new Date();
         let leftUntil = newYear - now;
+
+        if (leftUntil < 0) {
+            return
+        }
 
         let days = Math.floor(leftUntil / 1000 / 60 / 60 / 24);
         let hours = Math.floor(leftUntil / 1000 / 60 / 60) % 24;
@@ -182,12 +187,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //=====Очистка формы===============================
 
-    
-document.addEventListener('click', (e) => { 
-    
+
+document.addEventListener('click', (e) => {
+
     // Очищаем поля формы 
-        e.target.reset(); 
-    });
+    e.target.reset();
+});
 
 //=================================================
 
